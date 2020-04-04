@@ -1,0 +1,71 @@
+.shine {
+  background: rgb(246, 247, 248);
+  background-image: linear-gradient(
+    to right,
+    rgb(246, 247, 248) 0%,
+    rgb(237, 238, 241) 20%,
+    rgb(246, 247, 248) 40%,
+    rgb(246, 247, 248) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 700px 700px;
+  display: inline-block;
+  position: relative;
+  
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards; 
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: placeholderShimmer;
+  -webkit-animation-timing-function: linear;
+}
+
+
+@-webkit-keyframes placeholderShimmer {
+  0% {
+    background-position: -300px 0;
+  }
+  
+  100% {
+    background-position: 300px 0; 
+  }
+}
+
+.header {
+  height: 300px;
+  width: 100%;
+}
+
+.section {
+  &__header {
+    height: 50px;
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 15px;
+    border-radius: 5px;
+  }
+  &__sub-header {
+    height: 10px;
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 15px;
+    border-radius: 5px;
+  }
+  &__main {
+    height: 300px;
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 15px;
+    border-radius: 5px;
+  }
+}
+
+.shimmer {
+  display: inline-flex;
+  flex-direction: column; 
+  margin-left: 25px;
+  margin-top: 15px;
+  vertical-align: top; 
+}

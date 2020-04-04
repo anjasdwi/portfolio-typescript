@@ -1,0 +1,39 @@
+{
+  "name": "with-typescript",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "export": "next export",
+    "start": "next start",
+    "type-check": "tsc",
+    "lint": "eslint pages/**/*.ts",
+    "lint:fix": "eslint pages/*.ts"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.9.7",
+    "@material-ui/icons": "^4.9.1",
+    "@types/node": "^12.12.21",
+    "@types/react": "^16.9.16",
+    "@types/react-dom": "^16.9.4",
+    "@zeit/next-css": "^0.2.1-canary.4",
+    "@zeit/next-sass": "^1.0.1",
+    "isomorphic-unfetch": "3.0.0",
+    "next": "latest",
+    "next-compose-plugins": "^2.2.0",
+    "node-sass": "^4.13.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-indiana-drag-scroll": "^1.6.1",
+    "typescript": "3.7.3"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.21.0",
+    "@typescript-eslint/parser": "^2.21.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-react-hooks": "^2.5.0"
+  },
+  "license": "ISC"
+}

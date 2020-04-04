@@ -1,0 +1,93 @@
+.hero {
+  padding:0px !important;
+  background-image: url('https://lh3.googleusercontent.com/Kyhd6P5AD27gtoESGWY5Ya4rPJfiy8-xzPCW0Z1pzLJyIz5fApXVLfxxwcQ-s2b8ZeSz0sgYiAsLwyZjgYPZ1TCBgDtHvN4Ah7_BwLZMhMfrRy6-DQanZOu-j0AdHNI__28WX4zVrQ=w951-h636-no');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  >div {
+    height: 100vh;
+  }
+  &__text {
+    padding: 16px 16px 40px 16px;
+    max-width: 300px;
+    margin: 0 auto;
+    // border: 1px solid gray;
+    h2 {
+      font: 500 40px/29px "Work Sans", sans-serif;
+      padding: 0px;
+      margin: 0;
+      letter-spacing: -2px;
+    }
+    h5 {
+      font: 500 20px/0px "Work Sans", sans-serif;
+      padding: 0px 3px;
+      margin: 21px 0px;
+      letter-spacing: -1px;
+    }
+    p {
+      font: 14px "Work Sans", sans-serif;
+      padding: 0px 3px;
+    }
+    svg {
+      font-size: 45px;
+      margin-left: -7px;
+    }
+  }
+}
+
+.education {
+  h2 {
+    font: 500 40px/29px "Work Sans", sans-serif;
+    padding: 80px 0px 0px 0px;
+    margin: 0;
+    letter-spacing: -2px;
+  }
+  &__header {
+    margin: 24px 0 !important;
+  }
+  &__content {
+    border: 1px solid rgb(222, 222, 222);
+    padding: 32px 32px !important;
+    margin-top: 24px !important;
+    h5 {
+      font: 14px "Work Sans", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    p {
+      font: 500 20px/20px "Work Sans", sans-serif;
+      letter-spacing: 0px;
+      margin: 8px 0px;
+    }
+  }
+}
+
+@media (max-width: 575.98px) { 
+
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .hero {
+    margin-top: -40px !important;
+    background-position: -165px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .hero {
+    >div {
+      align-items: flex-end !important;
+      background-image: linear-gradient(#ffffff00, white);
+    }
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+
+}
