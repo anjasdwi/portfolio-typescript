@@ -2,7 +2,8 @@ import * as React from 'react'
 import { NextPage } from 'next'
 import {
   HeroHeader,
-  Educations
+  Educations,
+  Career
 } from '../src/containers/landing'
 
 const IndexPage: NextPage = () => {
@@ -10,7 +11,10 @@ const IndexPage: NextPage = () => {
     <>
       <HeroHeader/>
       <div className="main">
-        <Educations/>
+        <div className="edu">
+          <Educations/>
+        </div>
+        <Career />
       </div>
     </>
   )

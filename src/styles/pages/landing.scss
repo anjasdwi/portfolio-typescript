@@ -62,6 +62,39 @@
   }
 }
 
+
+.career {
+  h2 {
+    font: 500 40px/29px "Work Sans", sans-serif;
+    padding: 80px 0px 0px 0px;
+    margin: 0;
+    letter-spacing: -2px;
+  }
+  &__header {
+    margin: 24px 0px 16px 0 !important;
+    max-width: 700px !important;
+  }
+  &__content {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 20px 0px;
+    &__item {
+      font: 14px "Work Sans", sans-serif;
+      margin: 12px;
+      max-width: 300px;
+      max-height: 50px;
+      cursor: pointer;
+      display: inline-block;
+      vertical-align: top;
+      white-space: normal;
+      border: 1px solid #dedede;
+      padding: 32px 32px;
+      border-radius: 4px;
+    }
+  }
+}
+
 @media (max-width: 575.98px) { 
 
 }
