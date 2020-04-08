@@ -19,7 +19,7 @@ const Educations: React.FunctionComponent = () => {
     {
       years : '2014',
       majors: 'Teknik Informatika',
-      education: 'Universitas Mercu Buana'
+      education: 'Universitas Mercu Buana, Jakarta'
     }
   ]
   return (
@@ -33,8 +33,8 @@ const Educations: React.FunctionComponent = () => {
         {
           datas.map((data)=>
             <Grid item xs={12} className="education__content">
-              <h5>{ data.years + ' - ' + data.education}</h5>
-        <     p>{ data.education }</p>
+              <h5>{ data.years + ' - ' + data.majors }</h5>
+              <p>{ data.education }</p>
             </Grid>
           )        
         }

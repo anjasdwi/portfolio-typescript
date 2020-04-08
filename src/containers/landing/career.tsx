@@ -4,6 +4,33 @@ import ScrollContainer from 'react-indiana-drag-scroll'
 
 const Career: React.FunctionComponent = () => {
 
+  const datas = [
+    {
+      years : '2014',
+      position : 'Designer Trace',
+      company: 'PT. Asia Citra Pratama',
+      description: 'Lorem Ipsum Dolor sit amet Lorem Ipsum Dolor sit amet Lorem Ipsum Dolor sit amet Lorem Ipsum Dolor sit amet Lorem Ipsum Dolor sit amet Lorem Ipsum Dolor sit amet'
+    },
+    {
+      years : '2018',
+      position : 'Frontend Developer',
+      company: 'Indivara Group (Jatis Travel)',
+      description: 'Lorem Ipsum Dolor sit amet Lorem Ipsum Dolor sit amet Lorem Ipsum Dolor sit amet Lorem Ipsum Dolor sit amet Lorem Ipsum Dolor sit amet Lorem Ipsum Dolor sit amet'
+    },
+    {
+      years : '2019',
+      position : 'Fullstack Developer',
+      company: 'Hrdpintar.com',
+      description: 'Lorem Ipsum Dolor sit amet Lorem Ipsum Dolor sit amet Lorem Ipsum Dolor sit amet Lorem Ipsum Dolor sit amet Lorem Ipsum Dolor sit amet Lorem Ipsum Dolor sit amet'
+    },
+    {
+      years : '2019 until now',
+      position: 'Frontend Engineer',
+      company: 'Bareksa.com',
+      description: 'Lorem Ipsum Dolor sit amet Lorem Ipsum Dolor sit amet Lorem Ipsum Dolor sit amet Lorem Ipsum Dolor sit amet Lorem Ipsum Dolor sit amet Lorem Ipsum Dolor sit amet'
+    }
+  ]
+
   return (
     <>
       <Grid 
@@ -28,24 +55,15 @@ const Career: React.FunctionComponent = () => {
       >
         <Grid item xs={12}>
           <ScrollContainer className="career__content">
+          {
+            datas.map((data)=>
             <div className="career__content__item">
-              To set initial scroll you need get the ref to the main DOM element of the ScrollContainer
+              <h5>{ data.years + ' - ' + data.company }</h5>
+              <p>{ data.position }</p>
+              <span>{ data.description }</span>
             </div>
-            <div className="career__content__item">
-              To set initial scroll you need get the ref to the main DOM element of the ScrollContainer
-            </div>
-            <div className="career__content__item">
-              To set initial scroll you need get the ref to the main DOM element of the ScrollContainer
-            </div>
-            <div className="career__content__item">
-              To set initial scroll you need get the ref to the main DOM element of the ScrollContainer
-            </div>
-            <div className="career__content__item">
-              To set initial scroll you need get the ref to the main DOM element of the ScrollContainer
-            </div>
-            <div className="career__content__item">
-              To set initial scroll you need get the ref to the main DOM element of the ScrollContainer
-            </div>
+            )
+          }
           </ScrollContainer>
         </Grid>
       </Grid>
